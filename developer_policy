@@ -1,0 +1,63 @@
+developer_policy
+Microsoft.KeyVault/vaults/keys/read
+Microsoft.KeyVault/vaults/keys/update/action
+Microsoft.KeyVault/vaults/keys/create/action
+Microsoft.KeyVault/vaults/keys/delete
+
+Microsoft.KeyVault/vaults/secrets/getSecret/action
+Microsoft.KeyVault/vaults/secrets/readMetadata/action
+Microsoft.KeyVault/vaults/secrets/setSecret/action
+Microsoft.KeyVault/vaults/secrets/update/action
+Microsoft.KeyVault/vaults/secrets/delete
+
+Microsoft.KeyVault/vaults/certificates/read
+Microsoft.KeyVault/vaults/certificates/update/action
+Microsoft.KeyVault/vaults/certificates/create/action
+Microsoft.KeyVault/vaults/certificates/delete
+
+
+Key Vault Crypto User + Key Vault Secrets Officer + Key Vault Certificates Officer
+        
+Key Vault Crypto User
+	"Microsoft.KeyVault/vaults/keys/read",
+        "Microsoft.KeyVault/vaults/keys/update/action",
+        "Microsoft.KeyVault/vaults/keys/backup/action",
+        "Microsoft.KeyVault/vaults/keys/encrypt/action",
+        "Microsoft.KeyVault/vaults/keys/decrypt/action",
+        "Microsoft.KeyVault/vaults/keys/wrap/action",
+        "Microsoft.KeyVault/vaults/keys/unwrap/action",
+        "Microsoft.KeyVault/vaults/keys/sign/action",
+        "Microsoft.KeyVault/vaults/keys/verify/action"
+
+Key Vault Secrets Officer
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.KeyVault/checkNameAvailability/read",
+        "Microsoft.KeyVault/deletedVaults/read",
+        "Microsoft.KeyVault/locations/*/read",
+        "Microsoft.KeyVault/vaults/*/read",
+        "Microsoft.KeyVault/operations/read"
+	"Microsoft.KeyVault/vaults/secrets/*"
+
+Key Vault Certificates Officer
+
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.KeyVault/checkNameAvailability/read",
+        "Microsoft.KeyVault/deletedVaults/read",
+        "Microsoft.KeyVault/locations/*/read",
+        "Microsoft.KeyVault/vaults/*/read",
+        "Microsoft.KeyVault/operations/read"
+
+	"Microsoft.KeyVault/vaults/certificatecas/*",
+        "Microsoft.KeyVault/vaults/certificates/*",
+        "Microsoft.KeyVault/vaults/certificatecontacts/write"
+
+
+
