@@ -1,0 +1,15 @@
+all_readers_policy:
+Microsoft.KeyVault/vaults/certificates/read
+Microsoft.KeyVault/vaults/secrets/getSecret/action
+Microsoft.KeyVault/vaults/secrets/readMetadata/action
+Microsoft.KeyVault/vaults/keys/read
+
+
+Key Vault Certificate User
+Microsoft.KeyVault/vaults/certificates/read
+Microsoft.KeyVault/vaults/secrets/getSecret/action
+Microsoft.KeyVault/vaults/secrets/readMetadata/action
+Microsoft.KeyVault/vaults/keys/read
+
+Diff: None
+
